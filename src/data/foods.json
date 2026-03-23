@@ -1,0 +1,658 @@
+[
+  {
+    "category": "Underweight",
+    "bmiRange": { "min": 0, "max": 18.4 },
+    "description": "Your BMI is too low. You need more calories and nutrient-rich foods to gain healthy weight.",
+    "goal": "Weight Gain & Muscle Building",
+    "color": "#3B82F6",
+    "bgColor": "#E6F1FB",
+    "textColor": "#0C447C",
+    "dailyCalories": "2500–3000 kcal",
+    "meals": {
+      "breakfast": [
+        {
+          "id": "uw_b1",
+          "name": "Egg & Banana Smoothie",
+          "image": "https://images.unsplash.com/photo-1553530666-ba11a90bb0ae?w=500&q=80",
+          "calories": 520,
+          "protein": "22g",
+          "carbs": "60g",
+          "fat": "20g",
+          "ingredients": ["2 bananas", "2 eggs", "1 cup milk", "1 tbsp honey", "peanut butter"],
+          "benefit": "Rapid weight gain and sustained energy throughout the morning",
+          "prepTime": "10 min"
+        },
+        {
+          "id": "uw_b2",
+          "name": "Paratha with Eggs & Ghee",
+          "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&q=80",
+          "calories": 650,
+          "protein": "20g",
+          "carbs": "70g",
+          "fat": "30g",
+          "ingredients": ["2 parathas", "2 eggs", "1 tsp ghee", "mixed vegetables"],
+          "benefit": "High calorie, excellent source of morning energy",
+          "prepTime": "20 min"
+        },
+        {
+          "id": "uw_b3",
+          "name": "Oats with Nuts & Honey",
+          "image": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=500&q=80",
+          "calories": 480,
+          "protein": "15g",
+          "carbs": "65g",
+          "fat": "18g",
+          "ingredients": ["1 cup oats", "mixed nuts", "1 tbsp honey", "1 cup milk", "raisins"],
+          "benefit": "Rich in fiber and healthy fats for healthy weight gain",
+          "prepTime": "10 min"
+        }
+      ],
+      "lunch": [
+        {
+          "id": "uw_l1",
+          "name": "Chicken Biryani",
+          "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&q=80",
+          "calories": 750,
+          "protein": "42g",
+          "carbs": "80g",
+          "fat": "25g",
+          "ingredients": ["200g chicken", "1.5 cups rice", "ghee", "spices", "onion"],
+          "benefit": "High protein meal that supports muscle growth and weight gain",
+          "prepTime": "45 min"
+        },
+        {
+          "id": "uw_l2",
+          "name": "Dal Rice & Fish Curry",
+          "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&q=80",
+          "calories": 680,
+          "protein": "38g",
+          "carbs": "85g",
+          "fat": "15g",
+          "ingredients": ["1.5 cups rice", "1 cup lentils", "200g fish", "vegetables"],
+          "benefit": "Complete balanced nutrition for healthy weight gain",
+          "prepTime": "35 min"
+        },
+        {
+          "id": "uw_l3",
+          "name": "Beef & Lentil Khichuri",
+          "image": "https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&q=80",
+          "calories": 720,
+          "protein": "40g",
+          "carbs": "78g",
+          "fat": "22g",
+          "ingredients": ["150g beef", "1 cup rice", "lentils", "vegetables", "spices"],
+          "benefit": "High in iron and protein, great for building mass",
+          "prepTime": "50 min"
+        }
+      ],
+      "dinner": [
+        {
+          "id": "uw_d1",
+          "name": "Grilled Chicken & Sweet Potato",
+          "image": "https://images.unsplash.com/photo-1598515213692-b1e6c76555b1?w=500&q=80",
+          "calories": 620,
+          "protein": "45g",
+          "carbs": "55g",
+          "fat": "18g",
+          "ingredients": ["200g chicken", "2 sweet potatoes", "olive oil", "rosemary"],
+          "benefit": "Muscle-building dinner with excellent night-time nutrition",
+          "prepTime": "30 min"
+        },
+        {
+          "id": "uw_d2",
+          "name": "Egg Fried Rice",
+          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&q=80",
+          "calories": 590,
+          "protein": "28g",
+          "carbs": "72g",
+          "fat": "20g",
+          "ingredients": ["1.5 cups rice", "3 eggs", "mixed vegetables", "soy sauce", "oil"],
+          "benefit": "Quick to prepare and calorie-dense for weight gain",
+          "prepTime": "20 min"
+        }
+      ],
+      "snacks": [
+        {
+          "id": "uw_s1",
+          "name": "Mixed Nuts & Dried Fruits",
+          "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&q=80",
+          "calories": 280,
+          "protein": "8g",
+          "carbs": "30g",
+          "fat": "16g",
+          "ingredients": ["cashews", "walnuts", "raisins", "dates", "peanuts"],
+          "benefit": "Healthy fats and natural sugars for a powerful energy boost",
+          "prepTime": "2 min"
+        },
+        {
+          "id": "uw_s2",
+          "name": "Peanut Butter Banana Toast",
+          "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500&q=80",
+          "calories": 380,
+          "protein": "14g",
+          "carbs": "45g",
+          "fat": "18g",
+          "ingredients": ["2 slices bread", "2 tbsp peanut butter", "1 banana"],
+          "benefit": "Calorie-dense snack that satisfies hunger effectively",
+          "prepTime": "5 min"
+        }
+      ]
+    },
+    "weeklyPlan": [
+      { "day": "Saturday",  "breakfast": "uw_b1", "lunch": "uw_l1", "dinner": "uw_d1", "snack": "uw_s1" },
+      { "day": "Sunday",    "breakfast": "uw_b2", "lunch": "uw_l2", "dinner": "uw_d2", "snack": "uw_s2" },
+      { "day": "Monday",    "breakfast": "uw_b3", "lunch": "uw_l3", "dinner": "uw_d1", "snack": "uw_s1" },
+      { "day": "Tuesday",   "breakfast": "uw_b1", "lunch": "uw_l1", "dinner": "uw_d2", "snack": "uw_s2" },
+      { "day": "Wednesday", "breakfast": "uw_b2", "lunch": "uw_l2", "dinner": "uw_d1", "snack": "uw_s1" },
+      { "day": "Thursday",  "breakfast": "uw_b3", "lunch": "uw_l3", "dinner": "uw_d2", "snack": "uw_s2" },
+      { "day": "Friday",    "breakfast": "uw_b1", "lunch": "uw_l1", "dinner": "uw_d1", "snack": "uw_s1" }
+    ],
+    "avoidFoods": [
+      { "name": "Junk Food (burgers, pizza)", "icon": "🍔" },
+      { "name": "Carbonated & Soft Drinks", "icon": "🥤" },
+      { "name": "Excessive Sugar & Candy", "icon": "🍬" },
+      { "name": "Processed & Packaged Foods", "icon": "🛍️" }
+    ],
+    "tips": [
+      "Eat 5–6 small meals spread throughout the day",
+      "Drink at least 8 glasses of water daily",
+      "Have milk or a protein shake before bed",
+      "Do resistance training to build muscle effectively",
+      "Never skip breakfast — it sets the tone for the day"
+    ]
+  },
+
+  {
+    "category": "Normal",
+    "bmiRange": { "min": 18.5, "max": 24.9 },
+    "description": "Your BMI is in the healthy range. Maintain a balanced diet to stay fit and energetic.",
+    "goal": "Maintain Weight & Stay Healthy",
+    "color": "#10B981",
+    "bgColor": "#EAF3DE",
+    "textColor": "#27500A",
+    "dailyCalories": "2000–2200 kcal",
+    "meals": {
+      "breakfast": [
+        {
+          "id": "nm_b1",
+          "name": "Whole Grain Toast & Poached Eggs",
+          "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&q=80",
+          "calories": 380,
+          "protein": "20g",
+          "carbs": "40g",
+          "fat": "15g",
+          "ingredients": ["2 slices whole grain bread", "2 poached eggs", "avocado", "tomato"],
+          "benefit": "Perfectly balanced macros for sustained energy throughout the day",
+          "prepTime": "15 min"
+        },
+        {
+          "id": "nm_b2",
+          "name": "Fruit & Yogurt Bowl",
+          "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=500&q=80",
+          "calories": 320,
+          "protein": "14g",
+          "carbs": "50g",
+          "fat": "8g",
+          "ingredients": ["1 cup Greek yogurt", "mixed fruits", "granola", "honey", "chia seeds"],
+          "benefit": "Probiotics support gut health and improve digestion",
+          "prepTime": "8 min"
+        },
+        {
+          "id": "nm_b3",
+          "name": "Vegetable Omelette",
+          "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&q=80",
+          "calories": 280,
+          "protein": "22g",
+          "carbs": "8g",
+          "fat": "18g",
+          "ingredients": ["3 eggs", "onion", "capsicum", "tomato", "spinach"],
+          "benefit": "High protein and low carb — ideal for maintaining lean weight",
+          "prepTime": "12 min"
+        }
+      ],
+      "lunch": [
+        {
+          "id": "nm_l1",
+          "name": "Brown Rice, Chicken & Veggies",
+          "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80",
+          "calories": 520,
+          "protein": "38g",
+          "carbs": "60g",
+          "fat": "12g",
+          "ingredients": ["1 cup brown rice", "150g chicken", "mixed vegetables", "olive oil"],
+          "benefit": "Balanced macros that perfectly support healthy weight maintenance",
+          "prepTime": "30 min"
+        },
+        {
+          "id": "nm_l2",
+          "name": "Dal Rice with Grilled Fish",
+          "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=500&q=80",
+          "calories": 550,
+          "protein": "35g",
+          "carbs": "70g",
+          "fat": "10g",
+          "ingredients": ["1 cup rice", "lentils", "150g grilled fish", "vegetables"],
+          "benefit": "Traditional balanced meal with complete essential nutrients",
+          "prepTime": "30 min"
+        },
+        {
+          "id": "nm_l3",
+          "name": "Grilled Fish Salad",
+          "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&q=80",
+          "calories": 350,
+          "protein": "40g",
+          "carbs": "15g",
+          "fat": "12g",
+          "ingredients": ["200g grilled fish", "lettuce", "cucumber", "tomato", "lemon dressing"],
+          "benefit": "Light, nutritious and refreshing — perfect for a healthy midday meal",
+          "prepTime": "20 min"
+        }
+      ],
+      "dinner": [
+        {
+          "id": "nm_d1",
+          "name": "Chicken & Vegetable Soup",
+          "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&q=80",
+          "calories": 380,
+          "protein": "35g",
+          "carbs": "30g",
+          "fat": "10g",
+          "ingredients": ["150g chicken", "carrot", "potato", "onion", "garlic", "spices"],
+          "benefit": "Light, easy to digest dinner that supports a good night's rest",
+          "prepTime": "35 min"
+        },
+        {
+          "id": "nm_d2",
+          "name": "Roti & Lentil Curry",
+          "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80",
+          "calories": 420,
+          "protein": "18g",
+          "carbs": "65g",
+          "fat": "8g",
+          "ingredients": ["3 whole wheat rotis", "1 cup lentils", "vegetables", "spices"],
+          "benefit": "Fiber-rich dinner that aids healthy digestion overnight",
+          "prepTime": "25 min"
+        }
+      ],
+      "snacks": [
+        {
+          "id": "nm_s1",
+          "name": "Fresh Seasonal Fruit Bowl",
+          "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=500&q=80",
+          "calories": 150,
+          "protein": "2g",
+          "carbs": "35g",
+          "fat": "0g",
+          "ingredients": ["mango", "banana", "guava", "apple", "any seasonal fruit"],
+          "benefit": "Natural vitamins, minerals and antioxidants to keep you refreshed",
+          "prepTime": "2 min"
+        },
+        {
+          "id": "nm_s2",
+          "name": "Roasted Chickpeas",
+          "image": "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=500&q=80",
+          "calories": 180,
+          "protein": "10g",
+          "carbs": "28g",
+          "fat": "4g",
+          "ingredients": ["1 cup chickpeas", "spices", "lemon juice"],
+          "benefit": "High protein snack that keeps you full between meals",
+          "prepTime": "5 min"
+        }
+      ]
+    },
+    "weeklyPlan": [
+      { "day": "Saturday",  "breakfast": "nm_b1", "lunch": "nm_l1", "dinner": "nm_d1", "snack": "nm_s1" },
+      { "day": "Sunday",    "breakfast": "nm_b2", "lunch": "nm_l2", "dinner": "nm_d2", "snack": "nm_s2" },
+      { "day": "Monday",    "breakfast": "nm_b3", "lunch": "nm_l3", "dinner": "nm_d1", "snack": "nm_s1" },
+      { "day": "Tuesday",   "breakfast": "nm_b1", "lunch": "nm_l1", "dinner": "nm_d2", "snack": "nm_s2" },
+      { "day": "Wednesday", "breakfast": "nm_b2", "lunch": "nm_l2", "dinner": "nm_d1", "snack": "nm_s1" },
+      { "day": "Thursday",  "breakfast": "nm_b3", "lunch": "nm_l3", "dinner": "nm_d2", "snack": "nm_s2" },
+      { "day": "Friday",    "breakfast": "nm_b1", "lunch": "nm_l1", "dinner": "nm_d1", "snack": "nm_s1" }
+    ],
+    "avoidFoods": [
+      { "name": "Excessive Deep-Fried Food", "icon": "🍟" },
+      { "name": "Sugary Drinks & Soda", "icon": "🥤" },
+      { "name": "Processed & Packaged Snacks", "icon": "🍪" },
+      { "name": "Too Much Salt", "icon": "🧂" }
+    ],
+    "tips": [
+      "Eat 3 regular meals at consistent times every day",
+      "Walk or exercise for at least 30 minutes daily",
+      "Stay hydrated — drink at least 8 glasses of water",
+      "Avoid heavy meals after 10 PM to support better sleep",
+      "Include vegetables in every meal for micronutrients"
+    ]
+  },
+
+  {
+    "category": "Overweight",
+    "bmiRange": { "min": 25, "max": 29.9 },
+    "description": "Your weight is above the healthy range. Focus on low-calorie, nutrient-dense foods to lose fat gradually.",
+    "goal": "Weight Loss & Fat Reduction",
+    "color": "#F59E0B",
+    "bgColor": "#FAEEDA",
+    "textColor": "#633806",
+    "dailyCalories": "1500–1800 kcal",
+    "meals": {
+      "breakfast": [
+        {
+          "id": "ow_b1",
+          "name": "Boiled Eggs & Green Tea",
+          "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&q=80",
+          "calories": 220,
+          "protein": "16g",
+          "carbs": "18g",
+          "fat": "10g",
+          "ingredients": ["2 boiled eggs", "1 cup green tea", "1 slice whole grain bread"],
+          "benefit": "Boosts metabolism and helps the body burn fat more efficiently",
+          "prepTime": "10 min"
+        },
+        {
+          "id": "ow_b2",
+          "name": "Oats with Skimmed Milk",
+          "image": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=500&q=80",
+          "calories": 280,
+          "protein": "12g",
+          "carbs": "48g",
+          "fat": "5g",
+          "ingredients": ["1 cup oats", "1 cup skimmed milk", "1 apple", "cinnamon"],
+          "benefit": "Fiber-rich breakfast that keeps you full for longer, reducing cravings",
+          "prepTime": "8 min"
+        },
+        {
+          "id": "ow_b3",
+          "name": "Green Vegetable Smoothie",
+          "image": "https://images.unsplash.com/photo-1638176067248-66f395269972?w=500&q=80",
+          "calories": 180,
+          "protein": "5g",
+          "carbs": "38g",
+          "fat": "1g",
+          "ingredients": ["spinach", "cucumber", "ginger", "lemon", "1 banana"],
+          "benefit": "Detoxifies the body and actively supports gradual weight loss",
+          "prepTime": "8 min"
+        }
+      ],
+      "lunch": [
+        {
+          "id": "ow_l1",
+          "name": "Grilled Chicken Salad",
+          "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80",
+          "calories": 320,
+          "protein": "42g",
+          "carbs": "12g",
+          "fat": "8g",
+          "ingredients": ["150g grilled chicken (skinless)", "lettuce", "cucumber", "tomato", "lemon"],
+          "benefit": "High protein, very low calorie — the ideal fat-loss lunch",
+          "prepTime": "20 min"
+        },
+        {
+          "id": "ow_l2",
+          "name": "Controlled Portion Rice & Fish",
+          "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=500&q=80",
+          "calories": 420,
+          "protein": "36g",
+          "carbs": "52g",
+          "fat": "8g",
+          "ingredients": ["3/4 cup rice", "200g fish", "vegetables", "minimal oil"],
+          "benefit": "Portion-controlled traditional meal that still satisfies",
+          "prepTime": "30 min"
+        },
+        {
+          "id": "ow_l3",
+          "name": "Vegetable Khichuri",
+          "image": "https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&q=80",
+          "calories": 350,
+          "protein": "15g",
+          "carbs": "60g",
+          "fat": "6g",
+          "ingredients": ["1/2 cup rice", "lentils", "mixed vegetables", "minimal oil"],
+          "benefit": "Balanced and easy to digest, great for controlled weight loss",
+          "prepTime": "30 min"
+        }
+      ],
+      "dinner": [
+        {
+          "id": "ow_d1",
+          "name": "Steamed Fish & Vegetables",
+          "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&q=80",
+          "calories": 280,
+          "protein": "38g",
+          "carbs": "15g",
+          "fat": "6g",
+          "ingredients": ["200g fish", "broccoli", "carrot", "spices (no oil)"],
+          "benefit": "Lightest possible dinner — fat-free cooking method",
+          "prepTime": "25 min"
+        },
+        {
+          "id": "ow_d2",
+          "name": "Roti & Vegetable Curry",
+          "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80",
+          "calories": 300,
+          "protein": "10g",
+          "carbs": "55g",
+          "fat": "6g",
+          "ingredients": ["2 whole wheat rotis", "mixed vegetables", "cooked with minimal oil"],
+          "benefit": "High fiber and low calorie dinner for consistent fat loss",
+          "prepTime": "20 min"
+        }
+      ],
+      "snacks": [
+        {
+          "id": "ow_s1",
+          "name": "Cucumber & Tomato Salad",
+          "image": "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=500&q=80",
+          "calories": 60,
+          "protein": "2g",
+          "carbs": "12g",
+          "fat": "0g",
+          "ingredients": ["cucumber", "tomato", "lemon juice", "rock salt", "onion"],
+          "benefit": "Extremely low calorie snack that still keeps hunger at bay",
+          "prepTime": "5 min"
+        },
+        {
+          "id": "ow_s2",
+          "name": "Lemon Ginger Green Tea",
+          "image": "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=500&q=80",
+          "calories": 10,
+          "protein": "0g",
+          "carbs": "2g",
+          "fat": "0g",
+          "ingredients": ["green tea bag", "lemon slice", "hot water", "fresh ginger"],
+          "benefit": "Boosts metabolism and provides powerful antioxidant protection",
+          "prepTime": "3 min"
+        }
+      ]
+    },
+    "weeklyPlan": [
+      { "day": "Saturday",  "breakfast": "ow_b1", "lunch": "ow_l1", "dinner": "ow_d1", "snack": "ow_s1" },
+      { "day": "Sunday",    "breakfast": "ow_b2", "lunch": "ow_l2", "dinner": "ow_d2", "snack": "ow_s2" },
+      { "day": "Monday",    "breakfast": "ow_b3", "lunch": "ow_l3", "dinner": "ow_d1", "snack": "ow_s1" },
+      { "day": "Tuesday",   "breakfast": "ow_b1", "lunch": "ow_l1", "dinner": "ow_d2", "snack": "ow_s2" },
+      { "day": "Wednesday", "breakfast": "ow_b2", "lunch": "ow_l2", "dinner": "ow_d1", "snack": "ow_s1" },
+      { "day": "Thursday",  "breakfast": "ow_b3", "lunch": "ow_l3", "dinner": "ow_d2", "snack": "ow_s2" },
+      { "day": "Friday",    "breakfast": "ow_b1", "lunch": "ow_l1", "dinner": "ow_d1", "snack": "ow_s1" }
+    ],
+    "avoidFoods": [
+      { "name": "All Types of Deep-Fried Food", "icon": "🍟" },
+      { "name": "Sugar, Sweets & Desserts", "icon": "🍰" },
+      { "name": "Excess White Rice", "icon": "🍚" },
+      { "name": "Fast Food Entirely", "icon": "🍔" },
+      { "name": "Carbonated Drinks & Juice", "icon": "🥤" }
+    ],
+    "tips": [
+      "Drink a full glass of water before every meal",
+      "Use a smaller plate to naturally control your portions",
+      "Avoid any heavy meals after 7 PM",
+      "Walk briskly for at least 45 minutes every day",
+      "Always take the stairs instead of the lift"
+    ]
+  },
+
+  {
+    "category": "Obese",
+    "bmiRange": { "min": 30, "max": 999 },
+    "description": "Your weight is significantly above healthy levels. Please consult a doctor and follow a strict diet plan.",
+    "goal": "Significant Weight Loss & Health Recovery",
+    "color": "#EF4444",
+    "bgColor": "#FCEBEB",
+    "textColor": "#791F1F",
+    "dailyCalories": "1200–1500 kcal",
+    "warning": "A BMI over 30 requires guidance from a certified doctor or dietitian before making major dietary changes.",
+    "meals": {
+      "breakfast": [
+        {
+          "id": "ob_b1",
+          "name": "Egg White Omelette",
+          "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&q=80",
+          "calories": 150,
+          "protein": "18g",
+          "carbs": "5g",
+          "fat": "4g",
+          "ingredients": ["3 egg whites", "spinach", "tomato", "minimal oil"],
+          "benefit": "Extremely low calorie with high protein — best for aggressive weight loss",
+          "prepTime": "10 min"
+        },
+        {
+          "id": "ob_b2",
+          "name": "Clear Vegetable Soup",
+          "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&q=80",
+          "calories": 120,
+          "protein": "5g",
+          "carbs": "22g",
+          "fat": "2g",
+          "ingredients": ["mixed vegetables", "garlic", "ginger", "black pepper", "low salt"],
+          "benefit": "Very low calorie yet highly filling — ideal for the first meal",
+          "prepTime": "20 min"
+        },
+        {
+          "id": "ob_b3",
+          "name": "Sugar-Free Overnight Oats",
+          "image": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=500&q=80",
+          "calories": 200,
+          "protein": "10g",
+          "carbs": "32g",
+          "fat": "4g",
+          "ingredients": ["1/2 cup oats", "1/2 cup skimmed milk", "chia seeds", "berries"],
+          "benefit": "Zero added sugar and high fiber — controls blood sugar spikes",
+          "prepTime": "5 min (prep the night before)"
+        }
+      ],
+      "lunch": [
+        {
+          "id": "ob_l1",
+          "name": "Boiled Chicken Breast & Vegetables",
+          "image": "https://images.unsplash.com/photo-1598515213692-b1e6c76555b1?w=500&q=80",
+          "calories": 280,
+          "protein": "35g",
+          "carbs": "20g",
+          "fat": "5g",
+          "ingredients": ["120g chicken breast", "carrot", "peas", "broccoli", "lemon"],
+          "benefit": "Absolute lowest fat option with maximum protein for recovery",
+          "prepTime": "25 min"
+        },
+        {
+          "id": "ob_l2",
+          "name": "Half Portion Rice & Dal",
+          "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&q=80",
+          "calories": 320,
+          "protein": "14g",
+          "carbs": "58g",
+          "fat": "3g",
+          "ingredients": ["1/2 cup boiled rice", "lentils", "vegetables", "no added oil"],
+          "benefit": "Strictly controlled carbohydrates for meaningful weight loss",
+          "prepTime": "25 min"
+        },
+        {
+          "id": "ob_l3",
+          "name": "Lentil Soup & 1 Roti",
+          "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&q=80",
+          "calories": 280,
+          "protein": "14g",
+          "carbs": "48g",
+          "fat": "4g",
+          "ingredients": ["1 cup lentil soup", "1 whole wheat roti", "vegetables"],
+          "benefit": "Low calorie and high fiber — promotes consistent fat burning",
+          "prepTime": "20 min"
+        }
+      ],
+      "dinner": [
+        {
+          "id": "ob_d1",
+          "name": "Steamed Vegetables Only",
+          "image": "https://images.unsplash.com/photo-1540914124281-342587941389?w=500&q=80",
+          "calories": 150,
+          "protein": "6g",
+          "carbs": "28g",
+          "fat": "1g",
+          "ingredients": ["broccoli", "cauliflower", "carrot", "green beans", "lemon & black pepper"],
+          "benefit": "The lightest possible dinner — virtually zero fat, high in nutrients",
+          "prepTime": "20 min"
+        },
+        {
+          "id": "ob_d2",
+          "name": "Oil-Free Fish Soup",
+          "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&q=80",
+          "calories": 200,
+          "protein": "30g",
+          "carbs": "10g",
+          "fat": "4g",
+          "ingredients": ["150g fish", "vegetables", "garlic", "ginger", "water (no oil)"],
+          "benefit": "Low calorie with solid protein — supports muscle while losing fat",
+          "prepTime": "25 min"
+        }
+      ],
+      "snacks": [
+        {
+          "id": "ob_s1",
+          "name": "Detox Lemon Cucumber Water",
+          "image": "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=500&q=80",
+          "calories": 20,
+          "protein": "0g",
+          "carbs": "4g",
+          "fat": "0g",
+          "ingredients": ["lemon juice", "cucumber slices", "water", "mint leaves"],
+          "benefit": "Natural detox drink that actively boosts metabolism all day",
+          "prepTime": "3 min"
+        },
+        {
+          "id": "ob_s2",
+          "name": "A Handful of Raw Almonds",
+          "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&q=80",
+          "calories": 80,
+          "protein": "3g",
+          "carbs": "3g",
+          "fat": "7g",
+          "ingredients": ["10–12 raw almonds (unsalted)"],
+          "benefit": "Healthy fats that curb hunger and prevent overeating at dinner",
+          "prepTime": "1 min"
+        }
+      ]
+    },
+    "weeklyPlan": [
+      { "day": "Saturday",  "breakfast": "ob_b1", "lunch": "ob_l1", "dinner": "ob_d1", "snack": "ob_s1" },
+      { "day": "Sunday",    "breakfast": "ob_b2", "lunch": "ob_l2", "dinner": "ob_d2", "snack": "ob_s2" },
+      { "day": "Monday",    "breakfast": "ob_b3", "lunch": "ob_l3", "dinner": "ob_d1", "snack": "ob_s1" },
+      { "day": "Tuesday",   "breakfast": "ob_b1", "lunch": "ob_l1", "dinner": "ob_d2", "snack": "ob_s2" },
+      { "day": "Wednesday", "breakfast": "ob_b2", "lunch": "ob_l2", "dinner": "ob_d1", "snack": "ob_s1" },
+      { "day": "Thursday",  "breakfast": "ob_b3", "lunch": "ob_l3", "dinner": "ob_d2", "snack": "ob_s2" },
+      { "day": "Friday",    "breakfast": "ob_b1", "lunch": "ob_l1", "dinner": "ob_d1", "snack": "ob_s1" }
+    ],
+    "avoidFoods": [
+      { "name": "Large Portions of Rice", "icon": "🍚" },
+      { "name": "All Deep-Fried Food", "icon": "🍟" },
+      { "name": "Sweets, Chocolate & Cake", "icon": "🍰" },
+      { "name": "Carbonated Drinks & Fruit Juice", "icon": "🥤" },
+      { "name": "All Fast Food", "icon": "🍔" },
+      { "name": "Any Heavy Meal at Night", "icon": "🌙" }
+    ],
+    "tips": [
+      "Consult a doctor or certified dietitian immediately",
+      "Consider intermittent fasting only under medical supervision",
+      "Walk at least 1 hour every single day without fail",
+      "Eat absolutely nothing after 6 PM",
+      "Drink a minimum of 3 liters of water daily",
+      "Chew every bite slowly and mindfully — it helps a lot"
+    ]
+  }
+]

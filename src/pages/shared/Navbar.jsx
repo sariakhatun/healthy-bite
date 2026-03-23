@@ -19,9 +19,9 @@ const LeafIcon = () => (
 
 const navLinks = [
   { label: "Home", href: "/", icon: FaHome },
-  { label: "BMI Calculator", href: "/bmi", icon: FaCalculator },
+  // { label: "BMI Calculator", href: "/bmi", icon: FaCalculator },
   { label: "Food Suggestion", href: "/foods", icon: FaUtensils },
-  { label: "Medicine & Exercise", href: "#medicines", icon: FaHeartbeat },
+  { label: "Medicine & Exercise", href: "/medicines", icon: FaHeartbeat },
   { label: "Appointment", href: "/appointment", icon: FaCalendarCheck },
 ];
 
@@ -34,7 +34,7 @@ export default function Navbar() {
 
   const dropdownRef = useRef();
 
-  console.log("user from navbar",user)
+  console.log("user from navbar", user);
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -51,6 +51,7 @@ export default function Navbar() {
   const handleLogout = () => {
     logOut()
       .then(() => {
+        // localStorage.removeItem("bmi");
         Swal.fire({
           title: "Logged Out!",
           icon: "success",
@@ -76,17 +77,17 @@ export default function Navbar() {
   return (
     <nav className="fixed bg-[#41431B] top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        
         {/* Logo */}
-       <Link to='/'>
-        <div className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#d0f236] to-[#77be0dee] flex items-center justify-center text-white">
-            <LeafIcon />
+        <Link to="/">
+          <div className="flex items-center gap-2">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#d0f236] to-[#77be0dee] flex items-center justify-center text-white">
+              <LeafIcon />
+            </div>
+            <span className="text-xl font-black text-white">
+              Healthy<span className="text-[#77be0dee]">Bite</span>
+            </span>
           </div>
-          <span className="text-xl font-black text-white">
-            Healthy<span className="text-[#77be0dee]">Bite</span>
-          </span>
-        </div></Link>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
@@ -168,7 +169,6 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white px-6 py-4 flex flex-col gap-4 shadow-md">
-          
           {/* Links */}
           {navLinks.map((link) => {
             const Icon = link.icon;
@@ -192,10 +192,7 @@ export default function Navbar() {
             <>
               <div className="flex items-center gap-3">
                 {user?.photoURL ? (
-                  <img
-                    src={user.photoURL}
-                    className="w-10 h-10 rounded-full"
-                  />
+                  <img src={user.photoURL} className="w-10 h-10 rounded-full" />
                 ) : (
                   <FaUserCircle className="text-3xl" />
                 )}

@@ -6,6 +6,9 @@ import Login from "../pages/Authentication/LoginForm";
 import Register from "../pages/Authentication/Register";
 import DashboardLayout from "../layouts/DashboardLayout";
 import ProfilePage from "../pages/dashboard/ProfilePage";
+import Hero from "../pages/home/Hero";
+import FoodSuggestion from "../pages/FoodSuggestion";
+import MedicineSuggestion from "../pages/MedicineSuggestion";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +17,18 @@ export const router = createBrowserRouter([
       {
         index:true,
         Component: Home
+      },
+      {
+        path:'/bmi',
+        Component: Hero
+      },
+      {
+        path:'/foods',
+        Component: FoodSuggestion
+      },
+      {
+        path:'/medicines',
+        Component: MedicineSuggestion
       },
       {
         path:'/login',

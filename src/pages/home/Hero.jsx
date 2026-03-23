@@ -29,12 +29,12 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-emerald-50/40 to-teal-50"/>
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-bl from-emerald-100/60 to-transparent blur-3xl"/>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-teal-100/50 to-transparent blur-3xl"/>
+      <div className="absolute inset-0 "/>
+      <div className="absolute top-20 right-0 w-[600px] h-[600px] rounded-full  blur-3xl"/>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-3xl"/>
 
       {/* Floating food emojis */}
-      {["🥑","🫐","🥦","🍎","🥕","🫚"].map((em, i) => (
+      {/* {["🥑","🫐","🥦","🍎","🥕","🫚"].map((em, i) => (
         <div key={i} className="absolute text-2xl opacity-20 animate-bounce select-none pointer-events-none"
           style={{
             top: `${15 + i * 13}%`,
@@ -44,17 +44,17 @@ export default function Hero() {
           }}>
           {em}
         </div>
-      ))}
+      ))} */}
 
       <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-20">
         {/* Left */}
         <div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e5ffbeee] text-[#77be0dee] text-sm font-semibold mb-6">
             <HeartIcon/> Smart Health Platform
           </div>
           <h1 className="text-5xl md:text-6xl font-black text-slate-800 leading-tight mb-6" style={{fontFamily:"'Playfair Display',serif"}}>
             Eat Smart,<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a6e548ee] to-[#0dbe74ee]">
               Live Healthy
             </span>
           </h1>
@@ -62,12 +62,12 @@ export default function Hero() {
             Get personalized food suggestions, medicine guidance, and doctor appointments — all based on your BMI. Your journey to a healthier life starts here.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button className="px-7 py-3.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300 hover:-translate-y-0.5 transition-all">
+            <button className="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#77be0dee] to-[#5e940fee] text-white font-bold shadow-lg  hover:-translate-y-0.5 transition-all">
               Browse Food Plans
             </button>
-            <button className="px-7 py-3.5 rounded-full border-2 border-emerald-200 text-emerald-700 font-bold hover:bg-emerald-50 transition-all">
+            {/* <button className="px-7 py-3.5 rounded-full border-2 border-[#77be0dee] text-[#77be0dee] font-bold hover:bg-emerald-50 transition-all">
               Calculate BMI
-            </button>
+            </button> */}
           </div>
 
           {/* Stats */}
@@ -96,7 +96,7 @@ export default function Hero() {
                 placeholder="e.g. 170"
                 value={height}
                 onChange={e => setHeight(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-emerald-400 focus:outline-none text-slate-800 font-medium transition-colors"
+                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-[#77be0dee] focus:outline-none text-slate-800 font-medium transition-colors"
               />
             </div>
             <div>
@@ -111,7 +111,7 @@ export default function Hero() {
             </div>
             <button
               onClick={calcBMI}
-              className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-200 transition-all"
+              className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#77be0dee] to-[#77be0dee] text-white font-bold hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-200 transition-all"
             >
               Calculate My BMI
             </button>

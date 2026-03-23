@@ -1,28 +1,32 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
 import { updateProfile } from "firebase/auth";
 import { auth } from "../../firebase/firebase.init";
-import Swal from "sweetalert2"; // ✅ import SweetAlert2
+import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 
 export default function ProfilePage() {
   const { user } = useAuth();
 
   const [showModal, setShowModal] = useState(false);
-  const [displayName, setDisplayName] = useState(user?.displayName || "");
-  const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
+  const [displayName, setDisplayName] = useState("");
+  const [photoURL, setPhotoURL] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // ✅ Update modal fields only when modal is opened
+  const openModal = () => {
+    setDisplayName(user?.displayName || "");
+    setPhotoURL(user?.photoURL || "");
+    setShowModal(true);
+  };
 
   const handleUpdateProfile = async () => {
     if (!user) return;
     setLoading(true);
     try {
-      await updateProfile(auth.currentUser, {
-        displayName,
-        photoURL,
-      });
+      await updateProfile(auth.currentUser, { displayName, photoURL });
 
-      // SweetAlert success
       Swal.fire({
         icon: "success",
         title: "Profile Updated!",
@@ -34,8 +38,6 @@ export default function ProfilePage() {
       setShowModal(false);
     } catch (error) {
       console.error(error);
-
-      // SweetAlert error
       Swal.fire({
         icon: "error",
         title: "Update Failed",
@@ -78,14 +80,14 @@ export default function ProfilePage() {
 
         {/* Update Profile Button */}
         <button
-          onClick={() => setShowModal(true)}
+          onClick={openModal}
           className="mt-4 px-4 py-2 bg-[#77be0dee] text-white rounded-lg hover:bg-[#65a10bee] transition"
         >
           Update Profile
         </button>
       </div>
 
-      {/* Stats Cards (Health Focus) */}
+      {/* Stats Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
         <div className="bg-white rounded-xl shadow p-4 text-center">
           <p className="text-gray-500 text-sm">BMI</p>
@@ -133,7 +135,7 @@ export default function ProfilePage() {
               </button>
               <button
                 onClick={handleUpdateProfile}
-                className="px-4 py-2 rounded  bg-[#77be0dee] text-white  hover:bg-[#65a10bee]  transition"
+                className="px-4 py-2 rounded bg-[#77be0dee] text-white hover:bg-[#65a10bee] transition"
                 disabled={loading}
               >
                 {loading ? "Updating..." : "Save"}

@@ -5,7 +5,7 @@ import FoodCard from "../components/FoodCard";
 import useAuth from "../hooks/useAuth";
 import { Link } from "react-router";
 import { useBMI } from "../context/BMIContext";
-
+// atashi
 const SunIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
     <circle cx="12" cy="12" r="5" />
@@ -92,7 +92,6 @@ function MealSection({ type, items }) {
 }
 
 function WeeklyPlan({ weeklyPlan, meals }) {
-  // Build a flat lookup: id → meal name
   const lookup = {};
   Object.values(meals).forEach((items) =>
     items.forEach((m) => (lookup[m.id] = m.name))

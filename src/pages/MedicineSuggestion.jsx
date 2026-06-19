@@ -6,7 +6,7 @@ import medicinesData from "../data/medicines.json";
 import MedicineCard from "../components/MedicineCard";
 import ExerciseCard from "../components/ExerciseCard";
 
-// ── Icons ─────────────────────────────────────────────────────────
+// ── Icons mita
 const PillIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
     <path d="M10.5 20H4a2 2 0 01-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 011.66.9l.82 1.2a2 2 0 001.66.9H20a2 2 0 012 2v2" />
@@ -41,7 +41,7 @@ const HeartIcon = () => (
   </svg>
 );
 
-// ── Tab config ────────────────────────────────────────────────────
+// ── Tab config 
 const TABS = [
   { id: "medicines", label: "Medicine Guide", icon: <PillIcon /> },
   { id: "exercises", label: "Exercise Plan",  icon: <DumbbellIcon /> },

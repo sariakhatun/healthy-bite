@@ -14,7 +14,7 @@ export default function ProfilePage() {
   const [photoURL, setPhotoURL] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // ✅ Update modal fields only when modal is opened
+  // Update modal fields only when modal is opened
   const openModal = () => {
     setDisplayName(user?.displayName || "");
     setPhotoURL(user?.photoURL || "");

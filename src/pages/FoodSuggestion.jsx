@@ -6,7 +6,6 @@ import useAuth from "../hooks/useAuth";
 import { Link } from "react-router";
 import { useBMI } from "../context/BMIContext";
 
-// ── Icons ─────────────────────────────────────────────────────────
 const SunIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
     <circle cx="12" cy="12" r="5" />
@@ -50,7 +49,6 @@ const WarningIcon = () => (
   </svg>
 );
 
-// ── Helpers ───────────────────────────────────────────────────────
 function getCategoryData(bmi) {
   return foodsData.find(
     (cat) => bmi >= cat.bmiRange.min && bmi <= cat.bmiRange.max
@@ -61,7 +59,6 @@ function getAllMealsFlat(meals) {
   return Object.entries(meals).map(([type, items]) => ({ type, items }));
 }
 
-// ── Sub-components ────────────────────────────────────────────────
 function MealSection({ type, items }) {
   const icons = {
     breakfast: <SunIcon />,
@@ -179,7 +176,6 @@ function TipsAndAvoid({ tips, avoidFoods, warning }) {
   );
 }
 
-// ── BMI Input Form ────────────────────────────────────────────────
 function BMIForm({ onResult }) {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -254,7 +250,6 @@ function BMIForm({ onResult }) {
   );
 }
 
-// ── BMI Result Badge ──────────────────────────────────────────────
 function BMIBadge({ bmi, categoryData, onReset }) {
   const categoryColors = {
     Underweight: "bg-blue-100 text-blue-800 border-blue-200",
@@ -289,7 +284,6 @@ function BMIBadge({ bmi, categoryData, onReset }) {
   );
 }
 
-// ── Tab Bar ───────────────────────────────────────────────────────
 const TABS = [
   { id: "daily",   label: "Daily Plan",   icon: <LeafIcon /> },
   { id: "weekly",  label: "Weekly Plan",  icon: <CalendarIcon /> },

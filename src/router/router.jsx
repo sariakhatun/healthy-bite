@@ -9,6 +9,8 @@ import ProfilePage from "../pages/dashboard/ProfilePage";
 import Hero from "../pages/home/Hero";
 import FoodSuggestion from "../pages/FoodSuggestion";
 import MedicineSuggestion from "../pages/MedicineSuggestion";
+import Appointment from "../pages/Appointment";
+import MyBookings from "../components/appointment/MyBookings";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +33,10 @@ export const router = createBrowserRouter([
         Component: MedicineSuggestion
       },
       {
+        path:'/appointment',
+        Component: Appointment
+      },
+      {
         path:'/login',
         Component: Login
       },
@@ -45,6 +51,10 @@ export const router = createBrowserRouter([
           {
             index:true,
             Component: ProfilePage,
+          },
+          {
+            path:'bookings',
+            Component:MyBookings
           }
         ]
       }

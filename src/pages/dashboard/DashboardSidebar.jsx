@@ -20,13 +20,12 @@ export default function DashboardSidebar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const menuItems = [
-    { label: "Profile", to: "/dashboard", icon: FaUser },
-    { label: "Applications", to: "/dashboard/applications", icon: FaPaw },
+    { label: "Profile", to: "/dashboard", icon: FaUser ,end: true},
+    // { label: "Applications", to: "/dashboard/applications", icon: FaPaw },
     { label: "Favorites", to: "/dashboard/favorites", icon: FaHeart },
     { label: "My Bookings", to: "/dashboard/bookings", icon: FaClipboardList },
-    { label: "My Feedback", to: "/dashboard/feedback", icon: FaCommentDots },
-    { label: "Reviews", to: "/dashboard/reviews", icon: FaStar },
-    { label: "Sponsorships", to: "/dashboard/sponsorships", icon: FaVideo },
+    // { label: "My Feedback", to: "/dashboard/feedback", icon: FaCommentDots },
+    // { label: "Reviews", to: "/dashboard/reviews", icon: FaStar },
     { label: "Settings", to: "/dashboard/settings", icon: FaCog },
   ];
 
@@ -57,6 +56,7 @@ export default function DashboardSidebar() {
               <NavLink
                 key={item.label}
                 to={item.to}
+                end={item.end}
                 className={({ isActive }) =>
                   `flex items-center gap-3 px-4 py-2 rounded-lg text-gray-700 hover:bg-[#77be0dee] hover:text-white transition-colors ${
                     isActive ? "bg-[#77be0dee] text-white" : ""

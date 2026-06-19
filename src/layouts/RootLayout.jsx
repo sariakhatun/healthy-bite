@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import Navbar from "../pages/shared/Navbar";
 import Footer from "../pages/home/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const RootLayout = () => {
   return (
@@ -32,6 +33,7 @@ const RootLayout = () => {
           {em}
         </div>
       ))}
+      <ScrollToTop></ScrollToTop>
       <Navbar />
       <div className="flex-grow"> 
         <Outlet />

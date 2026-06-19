@@ -1,0 +1,642 @@
+[
+  {
+    "category": "Underweight",
+    "bmiRange": { "min": 0, "max": 18.4 },
+    "description": "Your BMI is too low. Focus on supplements that support healthy weight gain, muscle building, and nutrient absorption.",
+    "goal": "Weight Gain & Nutritional Support",
+    "color": "#3B82F6",
+    "bgColor": "#E6F1FB",
+    "textColor": "#0C447C",
+    "medicines": [
+      {
+        "id": "uw_m1",
+        "name": "Zinc Supplement",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Mineral Supplement",
+        "dosage": "15–30 mg daily with food",
+        "benefit": "Improves appetite, boosts immune function, and supports protein synthesis for muscle gain",
+        "warning": "Do not exceed 40mg/day. Take with food to avoid nausea.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "uw_m2",
+        "name": "Vitamin B12",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "500–1000 mcg daily",
+        "benefit": "Boosts energy metabolism, improves appetite, and supports red blood cell production",
+        "warning": "Safe for most people. Consult a doctor if you have kidney issues.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "uw_m3",
+        "name": "Protein Powder (Whey)",
+        "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&q=80",
+        "type": "Nutritional Supplement",
+        "dosage": "1–2 scoops (25–50g) daily after workout",
+        "benefit": "Rapidly increases protein intake, supports muscle repair and healthy weight gain",
+        "warning": "Avoid if lactose intolerant. Choose plant-based alternatives if needed.",
+        "available": "Pharmacy / Health Store"
+      },
+      {
+        "id": "uw_m4",
+        "name": "Iron Supplement",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Mineral Supplement",
+        "dosage": "18–27 mg daily with Vitamin C",
+        "benefit": "Prevents anemia, improves energy levels, and supports healthy blood production",
+        "warning": "Take on empty stomach for better absorption. May cause constipation.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "uw_m5",
+        "name": "Multivitamin Complex",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "1 tablet daily with breakfast",
+        "benefit": "Fills nutritional gaps, improves overall health and energy for weight gain journey",
+        "warning": "Do not exceed recommended dose. Store in a cool dry place.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "uw_m6",
+        "name": "Omega-3 Fish Oil",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Fatty Acid Supplement",
+        "dosage": "1000–2000 mg daily with meals",
+        "benefit": "Supports muscle growth, reduces inflammation, and improves nutrient absorption",
+        "warning": "May interact with blood thinners. Consult a doctor if on medication.",
+        "available": "Pharmacy (OTC)"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "uw_e1",
+        "name": "Dumbbell Squats",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80",
+        "type": "Strength Training",
+        "duration": "3 sets × 12 reps",
+        "frequency": "3 times per week",
+        "intensity": "Moderate",
+        "benefit": "Builds lower body muscle mass, increases overall body weight through muscle",
+        "calories": "150–200 kcal/session",
+        "equipment": "Dumbbells"
+      },
+      {
+        "id": "uw_e2",
+        "name": "Push-Ups",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "Bodyweight Strength",
+        "duration": "3 sets × 15 reps",
+        "frequency": "4 times per week",
+        "intensity": "Moderate",
+        "benefit": "Builds chest, shoulders and triceps — key muscle groups for upper body mass",
+        "calories": "100–150 kcal/session",
+        "equipment": "No equipment needed"
+      },
+      {
+        "id": "uw_e3",
+        "name": "Deadlifts",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80",
+        "type": "Strength Training",
+        "duration": "3 sets × 10 reps",
+        "frequency": "2 times per week",
+        "intensity": "High",
+        "benefit": "Full body compound movement that stimulates maximum muscle growth",
+        "calories": "200–250 kcal/session",
+        "equipment": "Barbell / Dumbbells"
+      },
+      {
+        "id": "uw_e4",
+        "name": "Bench Press",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "Strength Training",
+        "duration": "3 sets × 10 reps",
+        "frequency": "3 times per week",
+        "intensity": "High",
+        "benefit": "Targets chest and shoulders to build a wider, stronger upper body frame",
+        "calories": "180–220 kcal/session",
+        "equipment": "Barbell / Bench"
+      },
+      {
+        "id": "uw_e5",
+        "name": "Light Jogging",
+        "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+        "type": "Cardio",
+        "duration": "20 minutes",
+        "frequency": "2 times per week only",
+        "intensity": "Low",
+        "benefit": "Improves cardiovascular health without burning too many calories",
+        "calories": "150–180 kcal/session",
+        "equipment": "Running shoes"
+      },
+      {
+        "id": "uw_e6",
+        "name": "Plank Hold",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "Core Strength",
+        "duration": "3 sets × 30–60 seconds",
+        "frequency": "Daily",
+        "intensity": "Low–Moderate",
+        "benefit": "Builds core stability which is essential to support heavy compound lifts",
+        "calories": "50–80 kcal/session",
+        "equipment": "No equipment needed"
+      }
+    ],
+    "exerciseTips": [
+      "Focus on strength training over cardio — your goal is to gain, not burn",
+      "Rest at least 48 hours between training the same muscle group",
+      "Eat a protein-rich meal or shake within 30 minutes after every workout",
+      "Sleep 7–9 hours — muscle is built during sleep, not during the workout",
+      "Increase weight gradually each week to progressively overload muscles"
+    ],
+    "medicineTips": [
+      "Always consult a doctor before starting any supplement regimen",
+      "Take supplements with food unless the label says otherwise",
+      "Stay consistent — supplements take 4–8 weeks to show noticeable results",
+      "Supplements are an addition to food, not a replacement for real meals"
+    ],
+    "doctorNote": "If you have been underweight for more than 3 months, please consult a doctor to rule out underlying conditions such as thyroid disorders, anemia, or digestive issues."
+  },
+
+  {
+    "category": "Normal",
+    "bmiRange": { "min": 18.5, "max": 24.9 },
+    "description": "Your BMI is healthy. Focus on supplements that maintain your health, energy, and immunity.",
+    "goal": "Maintain Health & Boost Immunity",
+    "color": "#10B981",
+    "bgColor": "#EAF3DE",
+    "textColor": "#27500A",
+    "medicines": [
+      {
+        "id": "nm_m1",
+        "name": "Vitamin D3",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "1000–2000 IU daily with a fatty meal",
+        "benefit": "Supports bone health, immune system, and mood regulation for overall wellbeing",
+        "warning": "Do not take more than 4000 IU per day without a doctor's advice.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "nm_m2",
+        "name": "Vitamin C",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Antioxidant Vitamin",
+        "dosage": "500–1000 mg daily",
+        "benefit": "Powerful antioxidant that boosts immunity, improves skin health, and fights free radicals",
+        "warning": "High doses (2000mg+) may cause digestive discomfort.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "nm_m3",
+        "name": "Probiotic Capsules",
+        "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&q=80",
+        "type": "Digestive Supplement",
+        "dosage": "1 capsule daily on an empty stomach",
+        "benefit": "Maintains healthy gut flora, improves digestion, and strengthens the immune response",
+        "warning": "Refrigerate after opening. Not recommended during antibiotic treatment.",
+        "available": "Pharmacy / Health Store"
+      },
+      {
+        "id": "nm_m4",
+        "name": "Magnesium",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Mineral Supplement",
+        "dosage": "200–400 mg daily before bed",
+        "benefit": "Improves sleep quality, reduces muscle cramps, and supports nervous system function",
+        "warning": "High doses may cause loose stools. Start with a lower dose.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "nm_m5",
+        "name": "Omega-3 Fish Oil",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Fatty Acid Supplement",
+        "dosage": "1000 mg daily with meals",
+        "benefit": "Supports heart health, brain function, and reduces inflammation throughout the body",
+        "warning": "May interact with blood thinners. Consult doctor if on medication.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "nm_m6",
+        "name": "Biotin (Vitamin B7)",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "2.5–5 mg daily",
+        "benefit": "Promotes healthy hair, strong nails, and supports energy metabolism",
+        "warning": "May interfere with thyroid lab tests. Inform your doctor if getting blood work.",
+        "available": "Pharmacy (OTC)"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "nm_e1",
+        "name": "Brisk Walking",
+        "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+        "type": "Cardio",
+        "duration": "30–45 minutes",
+        "frequency": "5 times per week",
+        "intensity": "Moderate",
+        "benefit": "Maintains cardiovascular health, controls weight, and boosts daily energy levels",
+        "calories": "150–200 kcal/session",
+        "equipment": "Running shoes"
+      },
+      {
+        "id": "nm_e2",
+        "name": "Yoga",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
+        "type": "Flexibility & Mind",
+        "duration": "30–45 minutes",
+        "frequency": "3–4 times per week",
+        "intensity": "Low–Moderate",
+        "benefit": "Improves flexibility, reduces stress, and enhances mental clarity and focus",
+        "calories": "120–180 kcal/session",
+        "equipment": "Yoga mat"
+      },
+      {
+        "id": "nm_e3",
+        "name": "Swimming",
+        "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&q=80",
+        "type": "Full Body Cardio",
+        "duration": "30 minutes",
+        "frequency": "2–3 times per week",
+        "intensity": "Moderate–High",
+        "benefit": "Full body workout that tones muscles, burns calories, and is easy on the joints",
+        "calories": "250–350 kcal/session",
+        "equipment": "Swimming pool"
+      },
+      {
+        "id": "nm_e4",
+        "name": "Cycling",
+        "image": "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?w=500&q=80",
+        "type": "Cardio",
+        "duration": "30–40 minutes",
+        "frequency": "3 times per week",
+        "intensity": "Moderate",
+        "benefit": "Strengthens legs, improves stamina, and is great for maintaining a healthy weight",
+        "calories": "200–300 kcal/session",
+        "equipment": "Bicycle"
+      },
+      {
+        "id": "nm_e5",
+        "name": "Bodyweight Circuit",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "Strength & Cardio",
+        "duration": "25–30 minutes",
+        "frequency": "3 times per week",
+        "intensity": "Moderate",
+        "benefit": "Maintains muscle tone, burns calories, and improves overall functional fitness",
+        "calories": "200–250 kcal/session",
+        "equipment": "No equipment needed"
+      },
+      {
+        "id": "nm_e6",
+        "name": "Stretching & Mobility",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
+        "type": "Recovery",
+        "duration": "15–20 minutes",
+        "frequency": "Daily",
+        "intensity": "Low",
+        "benefit": "Prevents injury, relieves muscle tension, and keeps joints healthy and flexible",
+        "calories": "40–60 kcal/session",
+        "equipment": "Yoga mat"
+      }
+    ],
+    "exerciseTips": [
+      "Aim for a mix of cardio and strength training each week",
+      "Consistency beats intensity — 30 minutes daily is better than 2 hours once a week",
+      "Warm up for 5 minutes before every exercise session",
+      "Cool down and stretch for 5–10 minutes after every workout",
+      "Listen to your body — rest when you feel pain, not just soreness"
+    ],
+    "medicineTips": [
+      "You don't need heavy supplements — basic vitamins and minerals are enough",
+      "Get a blood test annually to check for any deficiencies",
+      "A well-balanced diet should cover most nutritional needs",
+      "Consult a doctor before adding any new supplement to your routine"
+    ],
+    "doctorNote": "Your BMI is in the healthy range. An annual check-up is recommended to monitor blood pressure, cholesterol, and blood sugar levels."
+  },
+
+  {
+    "category": "Overweight",
+    "bmiRange": { "min": 25, "max": 29.9 },
+    "description": "Your BMI is above the healthy range. Use supplements that support fat metabolism and exercises that burn calories efficiently.",
+    "goal": "Weight Loss & Fat Metabolism Support",
+    "color": "#F59E0B",
+    "bgColor": "#FAEEDA",
+    "textColor": "#633806",
+    "medicines": [
+      {
+        "id": "ow_m1",
+        "name": "Green Tea Extract",
+        "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80",
+        "type": "Metabolism Booster",
+        "dosage": "400–500 mg daily before meals",
+        "benefit": "Naturally boosts metabolism, increases fat burning, and provides antioxidant support",
+        "warning": "Contains caffeine. Avoid if sensitive to caffeine or if you have heart issues.",
+        "available": "Pharmacy / Health Store"
+      },
+      {
+        "id": "ow_m2",
+        "name": "CLA (Conjugated Linoleic Acid)",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Fat Metabolism Supplement",
+        "dosage": "3–4g daily with meals",
+        "benefit": "Helps reduce body fat while preserving lean muscle mass during weight loss",
+        "warning": "May cause mild digestive upset initially. Take with food.",
+        "available": "Health Store / Online"
+      },
+      {
+        "id": "ow_m3",
+        "name": "Fiber Supplement (Psyllium Husk)",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Digestive Supplement",
+        "dosage": "5–10g mixed in water, 30 min before meals",
+        "benefit": "Reduces appetite by creating a feeling of fullness, helps control calorie intake",
+        "warning": "Always take with plenty of water. Can cause bloating if you don't drink enough.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "ow_m4",
+        "name": "Vitamin D3",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "2000 IU daily with a fatty meal",
+        "benefit": "Deficiency is linked to weight gain. Supplementing helps regulate fat storage hormones",
+        "warning": "Do not exceed 4000 IU per day without doctor guidance.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "ow_m5",
+        "name": "Apple Cider Vinegar Capsules",
+        "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&q=80",
+        "type": "Natural Supplement",
+        "dosage": "500–1000 mg before meals",
+        "benefit": "Helps control blood sugar spikes after meals and supports gradual fat loss",
+        "warning": "May interact with diabetes medications. Consult a doctor if diabetic.",
+        "available": "Health Store / Pharmacy"
+      },
+      {
+        "id": "ow_m6",
+        "name": "Chromium Picolinate",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Mineral Supplement",
+        "dosage": "200–400 mcg daily",
+        "benefit": "Reduces sugar cravings, improves insulin sensitivity, and supports healthy metabolism",
+        "warning": "Consult a doctor if you have diabetes or kidney disease.",
+        "available": "Pharmacy / Health Store"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ow_e1",
+        "name": "Power Walking",
+        "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+        "type": "Cardio",
+        "duration": "45–60 minutes",
+        "frequency": "5–6 times per week",
+        "intensity": "Moderate",
+        "benefit": "Burns significant calories, easy on joints, and very effective for consistent fat loss",
+        "calories": "250–350 kcal/session",
+        "equipment": "Good walking shoes"
+      },
+      {
+        "id": "ow_e2",
+        "name": "Jump Rope",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "High Intensity Cardio",
+        "duration": "15–20 minutes",
+        "frequency": "4 times per week",
+        "intensity": "High",
+        "benefit": "Burns up to 400 calories in 20 minutes, improves coordination and cardiovascular fitness",
+        "calories": "300–400 kcal/session",
+        "equipment": "Jump rope"
+      },
+      {
+        "id": "ow_e3",
+        "name": "Water Aerobics",
+        "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&q=80",
+        "type": "Low Impact Cardio",
+        "duration": "45 minutes",
+        "frequency": "3 times per week",
+        "intensity": "Moderate",
+        "benefit": "Burns calories effectively with no stress on joints — ideal for overweight individuals",
+        "calories": "200–300 kcal/session",
+        "equipment": "Swimming pool"
+      },
+      {
+        "id": "ow_e4",
+        "name": "Stationary Bike",
+        "image": "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?w=500&q=80",
+        "type": "Cardio",
+        "duration": "30–40 minutes",
+        "frequency": "4 times per week",
+        "intensity": "Moderate",
+        "benefit": "Low impact but high calorie burn — great for beginners starting a weight loss journey",
+        "calories": "250–350 kcal/session",
+        "equipment": "Stationary bike"
+      },
+      {
+        "id": "ow_e5",
+        "name": "Resistance Band Training",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80",
+        "type": "Strength Training",
+        "duration": "30 minutes",
+        "frequency": "3 times per week",
+        "intensity": "Moderate",
+        "benefit": "Builds lean muscle that increases resting metabolic rate, burning more fat 24/7",
+        "calories": "150–200 kcal/session",
+        "equipment": "Resistance bands"
+      },
+      {
+        "id": "ow_e6",
+        "name": "HIIT (Beginner)",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "High Intensity Interval",
+        "duration": "20–25 minutes",
+        "frequency": "3 times per week",
+        "intensity": "High",
+        "benefit": "Maximum calorie burn in minimum time, keeps metabolism elevated for hours after",
+        "calories": "300–400 kcal/session",
+        "equipment": "No equipment needed"
+      }
+    ],
+    "exerciseTips": [
+      "Start slow and gradually increase intensity each week",
+      "Cardio should be your main focus — aim for 300+ minutes per week",
+      "Never exercise on an empty stomach — eat a light snack 30 min before",
+      "Track your steps — aim for at least 10,000 steps every day",
+      "Pair exercise with a calorie deficit diet for best results"
+    ],
+    "medicineTips": [
+      "Supplements alone will not cause weight loss — they only support your diet and exercise",
+      "Avoid unregulated 'fat burner' pills — they can be dangerous",
+      "Get your thyroid checked — an underactive thyroid can cause weight gain",
+      "Consult a doctor before taking any weight loss supplement"
+    ],
+    "doctorNote": "If you have been unable to lose weight despite diet and exercise for 3+ months, consult a doctor to check for hormonal imbalances such as hypothyroidism or PCOS."
+  },
+
+  {
+    "category": "Obese",
+    "bmiRange": { "min": 30, "max": 999 },
+    "description": "Your BMI indicates obesity. Medical supervision is strongly recommended alongside lifestyle changes.",
+    "goal": "Medical Weight Loss & Health Recovery",
+    "color": "#EF4444",
+    "bgColor": "#FCEBEB",
+    "textColor": "#791F1F",
+    "warning": "A BMI over 30 carries serious health risks. Please consult a certified doctor before starting any supplement or exercise program.",
+    "medicines": [
+      {
+        "id": "ob_m1",
+        "name": "Metformin (Prescription Only)",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Prescription Medicine",
+        "dosage": "As prescribed by doctor",
+        "benefit": "Improves insulin sensitivity, helps manage blood sugar, and supports weight management in obese individuals",
+        "warning": "PRESCRIPTION REQUIRED. Never take without a doctor's prescription. Regular monitoring required.",
+        "available": "Hospital / Prescription Only"
+      },
+      {
+        "id": "ob_m2",
+        "name": "Berberine",
+        "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&q=80",
+        "type": "Natural Metabolic Supplement",
+        "dosage": "500 mg × 3 times daily with meals",
+        "benefit": "Natural alternative that improves insulin sensitivity, reduces blood sugar, and supports weight loss",
+        "warning": "Consult a doctor before use. May interact with diabetes medications.",
+        "available": "Health Store / Pharmacy"
+      },
+      {
+        "id": "ob_m3",
+        "name": "Fiber Supplement (High Dose)",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80",
+        "type": "Digestive Supplement",
+        "dosage": "10–15g daily mixed in water",
+        "benefit": "Controls hunger significantly, slows glucose absorption, and supports healthy digestion",
+        "warning": "Increase water intake substantially. Introduce gradually to avoid gas.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "ob_m4",
+        "name": "Vitamin D3 + K2",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Vitamin Supplement",
+        "dosage": "3000–5000 IU D3 + 100 mcg K2 daily",
+        "benefit": "Obesity commonly causes vitamin D deficiency. This combination supports bone and heart health",
+        "warning": "High doses require doctor monitoring. Get blood levels checked every 3 months.",
+        "available": "Pharmacy (OTC)"
+      },
+      {
+        "id": "ob_m5",
+        "name": "Coenzyme Q10 (CoQ10)",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Antioxidant Supplement",
+        "dosage": "100–200 mg daily with a fatty meal",
+        "benefit": "Improves cellular energy production, supports heart health which is vital for obese individuals",
+        "warning": "May lower blood pressure. Consult doctor if on blood pressure medication.",
+        "available": "Pharmacy / Health Store"
+      },
+      {
+        "id": "ob_m6",
+        "name": "Omega-3 (High Dose)",
+        "image": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80",
+        "type": "Fatty Acid Supplement",
+        "dosage": "2000–4000 mg daily with meals",
+        "benefit": "Reduces inflammation associated with obesity, supports heart and liver health",
+        "warning": "High doses require medical supervision. May interact with blood thinners.",
+        "available": "Pharmacy (OTC)"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ob_e1",
+        "name": "Gentle Walking",
+        "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+        "type": "Low Impact Cardio",
+        "duration": "20–30 minutes (build up to 60 min)",
+        "frequency": "Daily",
+        "intensity": "Low",
+        "benefit": "Safe starting point for obese individuals — burns calories without joint stress",
+        "calories": "150–250 kcal/session",
+        "equipment": "Comfortable shoes"
+      },
+      {
+        "id": "ob_e2",
+        "name": "Chair Exercises",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80",
+        "type": "Seated Strength",
+        "duration": "20–30 minutes",
+        "frequency": "5 times per week",
+        "intensity": "Low",
+        "benefit": "Strengthens muscles with zero joint impact — ideal for those with mobility limitations",
+        "calories": "100–150 kcal/session",
+        "equipment": "Chair"
+      },
+      {
+        "id": "ob_e3",
+        "name": "Water Walking",
+        "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&q=80",
+        "type": "Low Impact Cardio",
+        "duration": "30–40 minutes",
+        "frequency": "3–4 times per week",
+        "intensity": "Low–Moderate",
+        "benefit": "Water supports body weight reducing joint stress while burning significant calories",
+        "calories": "200–300 kcal/session",
+        "equipment": "Swimming pool"
+      },
+      {
+        "id": "ob_e4",
+        "name": "Seated Yoga",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
+        "type": "Flexibility & Mindfulness",
+        "duration": "20–30 minutes",
+        "frequency": "3 times per week",
+        "intensity": "Low",
+        "benefit": "Improves flexibility, reduces stress (which causes weight gain), and builds body awareness",
+        "calories": "80–120 kcal/session",
+        "equipment": "Yoga mat or chair"
+      },
+      {
+        "id": "ob_e5",
+        "name": "Wall Push-Ups",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80",
+        "type": "Modified Strength",
+        "duration": "3 sets × 10–15 reps",
+        "frequency": "4 times per week",
+        "intensity": "Low–Moderate",
+        "benefit": "Builds upper body strength safely without putting pressure on wrists or knees",
+        "calories": "60–100 kcal/session",
+        "equipment": "A wall"
+      },
+      {
+        "id": "ob_e6",
+        "name": "Deep Breathing Exercise",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
+        "type": "Breathing & Mindfulness",
+        "duration": "10–15 minutes",
+        "frequency": "Daily",
+        "intensity": "Very Low",
+        "benefit": "Reduces cortisol (stress hormone) which directly contributes to belly fat accumulation",
+        "calories": "20–30 kcal/session",
+        "equipment": "No equipment needed"
+      }
+    ],
+    "exerciseTips": [
+      "Start with just 10–15 minutes daily and increase by 5 minutes each week",
+      "Choose low-impact exercises to protect your joints from excess pressure",
+      "Never exercise through pain — discomfort is okay, sharp pain is not",
+      "Work with a certified physiotherapist or trainer if possible",
+      "Consistency over intensity — small daily movement is more powerful than occasional intense sessions"
+    ],
+    "medicineTips": [
+      "Do not take any weight loss medicine without a doctor's prescription",
+      "Obesity is a medical condition — treat it as seriously as any other disease",
+      "Get regular blood tests to monitor blood sugar, cholesterol, and liver function",
+      "Prescription weight loss medications like Orlistat or GLP-1 agonists may be appropriate — ask your doctor"
+    ],
+    "doctorNote": "With a BMI over 30, you are at significantly higher risk for Type 2 Diabetes, Heart Disease, and Hypertension. Please consult a doctor immediately for a comprehensive health plan."
+  }
+]

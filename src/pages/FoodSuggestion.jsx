@@ -327,12 +327,12 @@ export default function FoodSuggestion() {
   );
 
   const handleReset = () => {
-    resetBMI();      // ✅ reset from context
+    resetBMI();      //  reset from context
     setTab("daily"); // reset tab
   };
 
   const handleBMIResult = (calculatedBMI) => {
-    saveBMI(calculatedBMI); // ✅ save in context
+    saveBMI(calculatedBMI); //  save in context
   };
 
   if (!user) {
@@ -370,7 +370,6 @@ export default function FoodSuggestion() {
           </p>
         </div>
 
-        {/* Show BMI Form if not calculated yet */}
         {!bmi && <BMIForm onResult={handleBMIResult} />}
 
         {/* Show results if BMI is calculated */}

@@ -11,6 +11,8 @@ import FoodSuggestion from "../pages/FoodSuggestion";
 import MedicineSuggestion from "../pages/MedicineSuggestion";
 import Appointment from "../pages/Appointment";
 import MyBookings from "../components/appointment/MyBookings";
+import Settings from "../pages/settings/Settings";
+import Favorites from "../components/dashboard/Favorites";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -55,7 +57,15 @@ export const router = createBrowserRouter([
           {
             path:'bookings',
             Component:MyBookings
-          }
+          },
+          {
+            path:'settings',
+            Component:Settings
+          },
+          {
+            path:'favorites',
+            Component: Favorites
+          },
         ]
       }
     ]

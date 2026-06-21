@@ -13,6 +13,8 @@ import Appointment from "../pages/Appointment";
 import MyBookings from "../components/appointment/MyBookings";
 import Settings from "../pages/settings/Settings";
 import Favorites from "../components/dashboard/Favorites";
+import AdminRoute from "../routes/Adminroute";
+import AdminDashboard from "../pages/AdminDashboard";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +48,8 @@ export const router = createBrowserRouter([
         path:'/register',
         Component: Register
       },
+     
+      
       {
         path:'/dashboard',
         Component: DashboardLayout,
@@ -66,6 +70,12 @@ export const router = createBrowserRouter([
             path:'favorites',
             Component: Favorites
           },
+          {
+            path:'admin',
+            element: <AdminRoute>
+              <AdminDashboard></AdminDashboard>
+            </AdminRoute>
+          }
         ]
       }
     ]

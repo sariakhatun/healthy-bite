@@ -12,12 +12,15 @@ import {
   FaSignOutAlt,
   FaBars,
   FaTimes,
+  FaShieldAlt,
 } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
+import useAdmin from "../../hooks/Useadmin";
 
 export default function DashboardSidebar() {
   const { logOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
+const { isAdmin } = useAdmin();
 
   const menuItems = [
     { label: "Profile", to: "/dashboard", icon: FaUser ,end: true},
@@ -27,6 +30,10 @@ export default function DashboardSidebar() {
     // { label: "My Feedback", to: "/dashboard/feedback", icon: FaCommentDots },
     // { label: "Reviews", to: "/dashboard/reviews", icon: FaStar },
     { label: "Settings", to: "/dashboard/settings", icon: FaCog },
+
+    ...(isAdmin
+    ? [{ label: "Admin Panel", to: "/dashboard/admin", icon: FaShieldAlt, isAdmin: true }]
+    : []),
   ];
 
   return (

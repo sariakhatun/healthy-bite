@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -82,13 +83,17 @@ const Banner = () => {
                         </p>
                         <div className="flex flex-wrap gap-4 mt-8">
                           {/* Primary Action Button */}
+                         <Link to={`/foods`}>
                           <button className="px-6 py-2.5 bg-[#77be0dee] text-white rounded-full  flex items-center gap-2 hover:bg-[#65a308ee] transition-all shadow-lg shadow-lime-900/20 active:scale-95">
                             {slide.buttonText} <MdOutlineArrowOutward />
-                          </button>
+                          </button></Link>
                           {/* Secondary Action Button */}
+                          <Link to={`/foods`}>
                           <button className="px-6 py-2.5 border-2 border-[#77be0dee] text-[#77be0dee] rounded-full  hover:bg-[#77be0dee] hover:text-white transition-all backdrop-blur-sm active:scale-95">
                             {slide.secondaryBtn}
                           </button>
+                          </Link>
+                          
                         </div>
                       </motion.div>
                     )}

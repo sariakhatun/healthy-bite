@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 export default function CTA() {
   return (
@@ -37,13 +38,14 @@ export default function CTA() {
 
           {/* Buttons - Now matches Navbar size */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+           <Link to={`/foods`}>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2.5 rounded-full bg-[#77be0dee] text-[#41431B] font-bold hover:bg-[#8ee012] transition-colors shadow-md text-sm uppercase tracking-wider"
             >
               Get Started Free
-            </motion.button>
+            </motion.button></Link>
             
             <motion.button 
               whileHover={{ backgroundColor: "rgba(255,255,255,0.1)" }}
